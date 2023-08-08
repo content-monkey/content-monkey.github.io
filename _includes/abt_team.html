@@ -1,0 +1,27 @@
+<!-- About team -->
+<section id="portfolio">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Our team</h2>
+      </div>
+    </div>
+    <div class="portfolio-flex-row">
+	<!-- Team -->
+      {% assign teamsters = site.teamsters %}
+      {% for teamster in teamsters %}
+      <div class="portfolio-flex-item portfolio-item"> 
+          <span class="abt-teamster-image">
+          <img src="/img/teamsters/{{ teamster.img }}" class="abt-teamster-image" alt="{{ teamster.alt }}">
+          </span>
+        <h3 class="abt-teamster-title">{{ teamster.title }}</h3>
+        <h4 class="abt-teamster-role">{{ teamster.role }}</h4>        
+        <div class="abt-teamster-text">{{ teamster.content }}</div>
+        <div class="abt-teamster-text"><a href="{{ teamster.social }}" class="portfolio-link" target="_blank" rel="noopener noreferrer">{{ teamster.social }}</a></div>
+        <div class="abt-teamster-text"><a href="{{ teamster.website }}" class="portfolio-link" target="_blank" rel="noopener noreferrer">{{ teamster.website }}</a></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div> 
+</section>
+        

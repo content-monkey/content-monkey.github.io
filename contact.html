@@ -1,0 +1,52 @@
+---
+layout: page
+title: Contact Us
+description: 
+background: '/img/bg-contact.jpg'
+form: true
+---
+
+<p>Send us a message and we'll get back to you as soon as possible.</p>
+<!-- usp=pp_url -->
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfurubhlsR7GtgL4S8pAAibc-HvcwzrRxdnOMhpRA7NuWdSoQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Name</label>
+      <input type="text"  name="entry.2005620554" id="entry.2005620554" class="form-control" placeholder="Name">
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+  <label>Email</label>
+      <input  type="text" name="entry.1045781291" id="entry.1045781291" class="form-control" placeholder="Email">
+     </div>
+  </div>
+  
+    <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+  <label>Message</label>
+  <input type="text" name="entry.839337160" id="entry.839337160" class="form-control" placeholder="Message">
+        </div>
+  </div>
+<br/><br/>
+  <div class="form-group">
+  <input type="submit" value="Send" class="btn btn-primary">
+  </div>
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Thanks!');
+  window.setTimeout(function () {
+        window.location.href = "http://127.0.0.1:4000/";
+    }, 1500);
+  });
+</script>

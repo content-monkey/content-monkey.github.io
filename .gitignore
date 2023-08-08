@@ -1,0 +1,7 @@
+_site
+_clients
+.sass-cache
+node_modules
+Gemfile.lock
+*.gem
+.DS_Store

@@ -1,0 +1,33 @@
+<!-- Homepage featured -->
+<section id="portfolio">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Professional writing and content strategy</h2>
+      </div>
+    </div>
+    
+    <div class="portfolio-flex-row">
+	<!-- Featured -->
+      {% assign featured = site.featured %}
+      {% for feature in featured %}
+      <div class="portfolio-flex-item portfolio-item"> 
+         	 {% if feature.icon %}
+         	 <span class="feature-icon">
+         	 <i class="fa {{ feature.icon }}" id="icon-feature" aria-hidden="true"></i>
+         		 {% else %}
+         	<span class="feature-image">
+         	 <img src="/img/icons/{{ feature.img }}" class="img-feature" alt="{{ feature.alt }}">
+         	 {% endif %}
+          </span>
+        <h3 class="hp-feature-title">{{ feature.title }}</h3>
+        <div class="hp-feature-text">{{ feature.content }}</div>         
+      </div>
+      {% endfor %}
+    </div>
+              <!-- Pager -->
+    <div class="clearfix">
+          <a class="btn btn-primary float-right" href="{{"/services" | relative_url }}">Our services &rarr;</a>
+        </div>
+  </div>
+</section>        

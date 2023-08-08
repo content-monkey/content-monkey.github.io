@@ -1,0 +1,52 @@
+---
+layout: default
+title: Services
+background: '/img/bg-post.jpg'
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <span class="subheading">{{ page.description }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+<!-- Services -->
+<section id="portfolio">
+  <div class="container portfolio-flex-grid">
+        <div class="portfolio-flex-row">
+          {% assign services = site.services %}
+            {% for service in site.services %}
+          <div class="portfolio-flex-item portfolio-item">
+              <!-- a href="{{ service.url }}" class="portfolio-link" -->
+                <img src="../img/services/{{ service.img }}" class="img-responsive" alt="{{ service.img-alt }}">
+                  <div class="service-title">
+                    {% if service.title %}
+                    <span>{{ service.title }}</span>
+                <!-- /a -->
+                {% endif %}
+            </div> 
+                    <div class="service-subtitle">
+                    {% if service.subtitle %}
+                    <span>{{ service.subtitle }}</span>
+               		{% endif %}
+            		</div> 
+            </div>           
+            {% endfor %}
+      </div>
+  </div>  
+</section>
