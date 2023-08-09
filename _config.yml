@@ -4,7 +4,7 @@ description:        Digital content services
 author:             Content Monkey
 # baseurl:            "/startbootstrap-clean-blog-jekyll"
 baseurl:            ""
-url:                "https://startbootstrap.github.io"
+url:                "https://content-monkey.github.io"
 
 collections:
   featured:
