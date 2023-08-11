@@ -8,13 +8,20 @@ figure{
 }
 
 .post-preview {
+
 	@media only screen and (min-width: 768px) {
        	 >a {
             >.post-title {
-              font-size: 30px !important;
+              font-size: 24px !important;
                 }
-            }
-        }
+			}
+		>div {	
+		.post-subtitle {
+			font-size: 20px !important;
+			font-family: $font-family-base;
+			  }
+		  }
+	}
 }
 
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -124,13 +131,13 @@ section {
 }
 
 section h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 	font-family: $headings-font-family;    
 }
 
 @media(max-width:767px) {
     section {
-        padding: 75px 0;
+        padding: 50px 0;
     }
 
     section.first {
@@ -149,7 +156,7 @@ h3.hp-feature-title {
 	}
 
 .hp-feature-text {
-		font-size: 16px;
+		font-size: 18px;
 		font-family: $font-family-base;
 	}
 
@@ -256,7 +263,7 @@ h3.hp-feature-title {
     }
     .client-bg {
 /*		margin: 2em 0;*/
-		padding: 3em 0 2em; 
+		padding: 2em 0 2em; 
     }
 }
 

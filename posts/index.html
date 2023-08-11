@@ -9,12 +9,13 @@ background: '/img/bg-post.jpg'
 <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>
-    {% if post.standfirst %}
-    <h4 class="post-subtitle">{{ post.standfirst }}</h4>
-    {% else %}
-    <h4 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h4>
-    {% endif %}
   </a>
+    {% if post.standfirst %}
+    <div class="post-subtitle">{{ post.standfirst }}</div>
+    {% else %}
+    <div class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</div>
+    {% endif %}
+
   <!-- p class="post-meta">Posted by
     {% if post.author %}
     {{ post.author }}

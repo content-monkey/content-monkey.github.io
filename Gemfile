@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 # gem "jekyll", ">= 3.8.5" DTD 20221222
@@ -17,3 +19,17 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "webrick", "~> 1.7"
+
+gem "rexml", "~> 3.2"
+
+# gem "rails"
+
+gem "jekyll-minifier"
+
+gem "jekyll-paginate-v2"
+
+# gem "jekyll-link-attributes"
+
+gem "jekyll-email-protect"
+
+gem "jekyll-imagemagick"
