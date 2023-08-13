@@ -5,7 +5,8 @@ author: Content Monkey
 icon: /assets/img/favicon.ico
 # baseurl: "/startbootstrap-clean-blog-jekyll"
 baseurl: ""
-url: "https://content-monkey.github.io"
+#url: "https://content-monkey.github.io"
+url: "https://contentmonkey.com.au"
 
 collections:
   featured:
