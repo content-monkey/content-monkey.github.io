@@ -31,8 +31,7 @@ linkedin_username:
 acknowledgement: We acknowledge the traditional owners of the land on which we work, and pay our respects to elders, past and present.
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-64352648-1 # legacy
-google_analytics:   G-HNG233LD21 # GA4 
+google_analytics: G-HNG233LD21 # GA4 
 
 # Build settings
 # Downgraded from jekyll-paginate-v2 to jekyll-paginate
