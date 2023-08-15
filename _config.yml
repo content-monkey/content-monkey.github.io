@@ -1,11 +1,10 @@
 title: Content Monkey
-email: info@contentmonkey.com.au
 description: Digital content services
+email: info@contentmonkey.com.au
 author: Content Monkey
 icon: /assets/img/favicon.ico
 # baseurl: "/startbootstrap-clean-blog-jekyll"
 baseurl: ""
-#url: "https://content-monkey.github.io"
 url: "https://contentmonkey.com.au"
 
 collections:
@@ -52,10 +51,10 @@ plugins:
   - jekyll-imagemagick
   - jekyll-minifier
   - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-sitemap 
   - jekyll-seo-tag
 #  - jekyll-link-attributes
-   
+
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
@@ -71,7 +70,16 @@ jekyll-minifier:
 
 # These are the defaults
 external_links:
-  enabled: true
+  enabled: false
   rel: external nofollow noopener
   target: _blank
   exclude:
+
+# -----------------------------------------------------------------------------
+# Jekyll ImageMagick
+# -----------------------------------------------------------------------------
+imagemagick:
+  enabled: true
+  output_formats:
+    jpg: "-quality 93% -define jpeg:dct-method=float -strip -interlace Plane"
+    webp: "-quality 100%"  
