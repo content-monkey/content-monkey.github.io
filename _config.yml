@@ -54,6 +54,7 @@ plugins:
   - jekyll-sitemap 
   - jekyll-seo-tag
 #  - jekyll-link-attributes
+#  - jekyll-responsive-image
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
